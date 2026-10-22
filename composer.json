@@ -1,0 +1,20 @@
+{
+    "name": "market-media/input",
+    "description": "Leitura e sanitização de entradas HTTP para PHP 8.5.",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.5",
+        "ext-filter": "*",
+        "ext-json": "*",
+        "voku/anti-xss": "^4.1.44"
+    },
+    "autoload": {
+        "psr-4": {
+            "MarketMedia\\Input\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": "@php tests/run.php"
+    }
+}
