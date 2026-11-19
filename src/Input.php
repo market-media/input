@@ -268,4 +268,15 @@ class Input
         // Charset explícito e entidades sempre codificadas para texto HTML.
         return htmlspecialchars($value, ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML5, 'UTF-8');
     }
+
+     /**
+     * @param string $param
+     * @param array $values
+     * @return void
+     * Função para retornar dados após uma requisisção Ajax
+     */
+    public function ajaxResponse(string $param, array $values): void
+    {
+        echo json_encode([$param => $values]);
+    }
 }
